@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&display=swap');
+
+*, body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Heebo;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: deepskyblue;
+}
+
+h2 {
+    text-shadow: 2px 3px 3px black
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background-color: #ffff1a;
+    font-size: 20px;
+    color: black;
+}
+
+.profil {
+    text-align: center;
+}
+
+.profil > img {
+    width: 200px;
+}
+
+ header {
+    display: inline;
+ }
+
+nav {
+    background-color: deepskyblue;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+ }
+
+.navBandung {
+    width: 50px;
+    float: right;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: #ffff1a;
+}
+
+.navJawa {
+    width: 50px;
+    float: left;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: #ffff1a;
+}
+ 
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+nav  li {
+    list-style-type: none;
+    display: inline;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffff1a;
+}
+
+nav li:hover {
+    background-color: rgb(0, 136, 181);
+    animation-delay: 3s;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+nav a:active {
+    color: #ffff1a;
+}
+
+.gambar {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.shadow {
+    box-shadow: 0 8px 4px 0 grey;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main {
+    padding: 20px;
+  }
+
+.content {
+    float: left;
+    width: 70%;
+    overflow: auto;
+} 
+
+aside {
+    float: right;
+    width: 28.5%;
+    margin-top: 20px;
+  }
+
+.footer {
+    background-color: deepskyblue;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    margin-top: 180%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .navBandung,
+    .navJawa {
+        width: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+  }
